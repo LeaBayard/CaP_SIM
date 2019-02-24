@@ -1,0 +1,17 @@
+# script de test pour le programme sim
+# usage :
+# > scat sim.script
+
+reset
+
+a0 40 00 00 8 "12345678" #intro puk
+a0 20 00 00 8 "00000000" #intro pin
+a0 24 00 00 10 "0000000034567890" #changement pin
+a0 24 00 00 10 "0000000233232323" #changement pin faux
+a0 24 00 00 10 "0000000233232323" #changement pin faux
+a0 24 00 00 10 "0000000233232323" #changement pin faux
+a0 2c 00 00 10 "1234567876767676" #debloque
+
+exit				# fin du script
+
+
